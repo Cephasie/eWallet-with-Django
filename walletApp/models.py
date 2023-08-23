@@ -10,6 +10,7 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=11)
 
+
 class Wallet(models.Model):
     user = models.CharField(max_length=150)
     balance = models.CharField(max_length=150)
